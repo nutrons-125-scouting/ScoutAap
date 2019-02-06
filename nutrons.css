@@ -1,0 +1,36 @@
+ul{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  font-family: sofachromeimport;
+  align-content: center;
+
+}
+
+header{
+  background-color: #000000;
+}
+
+h1{
+  font-size:400px;
+  color: white;
+}
+
+header img{
+
+}
+
+body{
+  font-family: sophachrome;
+}
+
+@font-face {
+  font-family: sofachromeimport;
+  src:url("sofachrome.ttf")
+}
+
+#main
+{
+  font-family: sofachromeimport;
+}
