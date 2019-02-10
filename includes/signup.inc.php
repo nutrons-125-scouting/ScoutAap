@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['signup.submit'])) {
+if(isset($_POST['signup-submit'])) {
 
   require 'dbh.inc.php';
 
@@ -13,7 +13,7 @@ if(empty($username) || empty($email) || empty($password) || empty($passwordRepea
     exit();
   }
 elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-  header("Location: ../signup.php?error=invalidmailuid");
+  header("Location: ../signup.php?error=invalidmail&uid");
   exit();
 }
 elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -25,7 +25,7 @@ header("Location: ../signup.php?error=invalidmailuid&mail=".$email);
 exit();
 }
 elseif($password !== $passwordRepeat){
-  header("Location: ../signup.php?error=passwordcheckuid".$username."&mail".$email);
+  header("Location: ../signup.php?error=passwordcheck&uid".$username."&mail".$email);
   exit();
 }
 else {
@@ -63,12 +63,23 @@ else {
       exit();
     }
   }
-  }
+}
 }
 mysqli_stmt_close($stmt);
 mysqli_close($conn);
 
 }
+
+/*else {
+     //Check if the email already exist
+     $sql = "SELECT * FROM users WHERE user_email='$email'";
+     $result = mysqli_query($connection, $sql);
+     $resultCheck = mysqli_num_rows($result);
+
+     if ($resultCheck > 0) {
+      header("Location: ../signup.php?signup=emailexist&first=$first&last=$last&uid=$uid");
+      exit();
+}﻿ */
 else {
   header("Location: ../signup.php");
   exit();

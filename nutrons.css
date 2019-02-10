@@ -5,24 +5,81 @@ ul{
   color: white;
   font-family: sofachromeimport;
   align-content: center;
+  list-style-type: none;
 
+}
+
+h1{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  font-family: sofachromeimport;
+  align-content: center;
+}
+
+h2{
+  font-style: italic;
+  font-weight: 200;
+  font-size: 15px;
+  color: white;
+  font-family: sofachromeimport;
+  align-content: center;
 }
 
 header{
   background-color: #000000;
+  border-style: outset;
 }
 
-h1{
-  font-size:400px;
-  color: white;
+footer{
+  background-color: #000000;
 }
 
-header img{
+input{
 
+}
+
+.transparent{
+    background:rgba(255,255,255,0.5);
+}
+body{
+  background-image: url('images/monkeyback.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+main{
+    list-style-type: none;
+}
+
+img{
+  width: 100px;
+}
+
+.header{
+  display: inline-block;
+}
+
+.righthead{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  width: 600px;
+  padding: 10px;
+}
+
+.righterhead{
+  display: inline-block;
 }
 
 body{
   font-family: sophachrome;
+}
+
+a{
+  color: white;
 }
 
 @font-face {
