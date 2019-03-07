@@ -1,7 +1,3 @@
-<?php
-  session_start();
- ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,28 +5,33 @@
   <meta name="description" content="This is an example of a meta description. This will often show up in search results. I eat Felix's booty cheeks.">
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="nutrons.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="selection.css" type="text/css" charset="utf-8">
   </head>
   <body>
 
     <header>
       <nav>
-        <ul class="header" href="nutrons.css" align="left">
+        <ul class="header" href="selection.css" align="left">
           <a href="index.php"><img src="images/nutimg.png" alt="nutrons"></a>
-          <a href="index.php">Home</a>
-          <a href="#">Contact Admin</a>
-          <a href="signup.php">Signup</a>
+          <a href="matchscouting.php">Match Scouting</a>
+          <a>|</a>
+          <a href="#">Pit Scouting</a>
+          <a>|</a>
+          <a href="#">Match Schedule</a>
+          <a>|</a>
+          <a href="#">Alliance Selection</a>
+
         </ul>
-        <div1 class="righthead" href="nutrons.css" align="right" id="container">
+        <div1 class="righthead" href="selection.css" align="right" id="container">
           <?php
           if (isset($_SESSION['userId'])) {
-            echo '<form action="includes/logout.inc.php" method="post">
+/*            echo '<form action="includes/logout.inc.php" method="post">
                       <button type="submit" name="logout-submit">Logout</button>
                     </form>';
 
           }
-          else {
-            echo '          <form action="includes/login.inc.php" method="post">
+          else {  */
+            echo '<form action="includes/login.inc.php" method="post">
                         <input type="text" name="mailuid" placeholder="Username/E-mail...">
                         <input type="password" name="pwd" placeholder="Password...">
                         <button type="submit" name="login-submit">Login</button>
