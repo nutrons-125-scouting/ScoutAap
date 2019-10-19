@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="description" content="This is an example of a meta description. This will often show up in search results. I eat Felix's booty cheeks.">
   <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.01, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <title></title>
   <link rel="stylesheet" href="selection.css" type="text/css" charset="utf-8">
   </head>
@@ -13,7 +16,7 @@
       <nav>
         <ul class="header" href="selection.css" align="left">
           <a href="index.php"><img src="images/nutimg.png" alt="nutrons"></a>
-          <a href="matchscouting.php">Match Scouting</a>
+          <a href="matchscoutingDEPRACATED.php">Match Scouting</a>
           <a>|</a>
           <a href="#">Pit Scouting</a>
           <a>|</a>
